@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(157, 168, 183)
+}
+
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.question{
+    background-color: white;
+    margin-top:1.5em;
+    width: 70%;
+    margin-inline: auto;
+    font-size: 1.5rem;
+    padding:1em;
+}
+
+.question-title{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.question-btn{
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*hide text*/
+
+.question-text{
+   /* display: none;*/ 
+    max-height:0px;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+
+/*When you set overflow: hidden, it hides any content that overflows 
+the element's box rather than displaying it.*/
+
+.show-text .question-text{
+    /*display: block;*/
+    max-height: 200px;
+    border-top: 1px dashed black;
+    
+}
+
+.minus-icon{
+    display:none;
+}
+
+.show-text .minus-icon{
+    display: inline;
+}
+
+.show-text .plus-icon{
+    display: none;
+}

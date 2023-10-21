@@ -1,0 +1,54 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: rgb(242,247,254);
+}
+
+body{
+    width:90%;
+    margin-inline:auto;
+}
+
+.section-center{
+    height:100vh;
+    text-align: center;
+}
+
+.section-center h3{
+    font-size: 3rem;
+    padding: 0.6em 0em;
+}
+
+.lorem-form{
+    font-size: 2.6rem;
+    margin-bottom: 60px;
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: center;
+}
+
+.lorem-form input{
+    font-size: 1.8rem;
+    width:100px;
+    background-color: white;
+    padding-left:10px;
+}
+
+.lorem-form button{
+    font-size: 1rem;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(2,136,209);
+    color: white;
+    cursor: pointer;
+}
+
+.lorem-text{
+    font-size: 1.5rem;
+}
+
+.result{
+    margin-bottom: 1.8em;
+}
