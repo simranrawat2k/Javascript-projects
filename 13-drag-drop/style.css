@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(249, 209, 193);
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: rgb(182, 200, 229);
+    display: flex;
+    width:70%;
+    min-height:300px;
+    gap:70px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:30px;
+}
+
+.whitebox{
+    width:110px;
+    height:150px;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.imgBox {
+    cursor: pointer;
+    width:105px;
+    height:145px;
+    background-image: url("https://previews.123rf.com/images/tigatelu/tigatelu1407/tigatelu140700191/30338535-cute-koala-waving-hand.jpg");
+    background-size: 100% 100%; /* Set the width and height of the background image */
+}
+
+
+.hold{
+    border: 3px dashed red;
+}
+
+.hide{
+    display:none; /*when img is dragged, the previous container should not display img as soon as dragging start*/
+}
+
+.dashed{
+    background-color: rgb(173, 173, 173);
+}
+
+
+
+
