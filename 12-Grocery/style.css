@@ -5,7 +5,7 @@
 }
 
 body{   
-    background-color: rgb(241,246,253);
+    background-color: rgb(208, 227, 255);
     font-size: 2rem;
 }
 
@@ -16,10 +16,36 @@ body{
     text-align: center;
     margin-top:3em;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px #949494;
+    padding-top:20px;
 }
 
 .grocery-form h3{
     padding: 20px 0px 30px;
+}
+
+.grocery-form .alert{
+    width: 90%;
+    font-size: 25px;
+    margin-inline:auto;
+}
+
+.alert-danger{
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+.alert-success{
+    color: #155724;
+    background-color: #d4edda;
+}
+
+.grocery-container{
+    visibility: hidden;
+}
+
+.show-container{
+    visibility: visible;
 }
 
 .form-control{
@@ -44,7 +70,7 @@ body{
 .form-control input{
     padding-left: 10px;
     border-radius: 5px;
-    width:31vw;
+    width:31.5vw;
 }
 
 .grocery-item{
@@ -54,6 +80,7 @@ body{
     padding-inline: 5px;
     width:78%;
     margin-inline: auto;
+    font-size: 1.5rem;
 }
 
 .grocery-item button{
@@ -121,12 +148,11 @@ body{
     }
 }
 
-@media  screen and (min-width: 1023px) and (max-width: 1100px){
+@media  screen and (min-width: 1023px) and (max-width: 1200px){
     .form-control input{  
         width:30vw;      
     }
-
-    
+   
 }
 
 
