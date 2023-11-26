@@ -18,9 +18,9 @@ clearBtn.addEventListener("click", clearItems);
 
 window.addEventListener("DOMContentLoaded", setupItems);
 
-/*const deleteBtn = document.querySelector("..delete-btn");
+/*const deleteBtn = document.querySelector(".delete-btn");
 console.log(deleteBtn); //null
-//it null because when page loge their is no delete button
+//it null because when page loge there is no delete button
 so we cannot use addeventListerner because we have no access to delete and edit button
 
 solution:

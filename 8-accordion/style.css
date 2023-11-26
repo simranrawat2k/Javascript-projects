@@ -47,15 +47,15 @@ body{
 /*When you set overflow: hidden, it hides any content that overflows 
 the element's box rather than displaying it.*/
 
+.minus-icon{
+    display:none;
+}
+
 .show-text .question-text{
     /*display: block;*/
     max-height: 200px;
     border-top: 1px dashed black;
     
-}
-
-.minus-icon{
-    display:none;
 }
 
 .show-text .minus-icon{

@@ -84,6 +84,12 @@ But some method you cannot run on the NodeList so you need to transform it into 
     })
 })*/
 
+/*The forEach loop is run only once when it's initially executed, and it attaches event listeners to each button. 
+After that, the event listeners are in place, and they respond to button clicks independently.
+Each button has its own event listener attached to it. When a button is clicked, the corresponding event listener is executed.
+The event listeners are aware of which button triggered the event through the btn parameter, which represents the current button in the iteration.
+*/
+
 btns.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     const styles = e.currentTarget.classList;

@@ -41,6 +41,4 @@ whiteBoxes.forEach(function (whitebox) {
     whitebox.addEventListener("drop", (e) => {
         e.target.append(imgBox);
     });
-
-
 });

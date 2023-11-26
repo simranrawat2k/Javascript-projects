@@ -8,6 +8,13 @@ btn.addEventListener("click", function(){
     console.log(randomNumber);
     document.body.style.backgroundColor = colors[randomNumber];
     color.textContent = colors[randomNumber];
+
+    // the .textContent property is used to get or set the text content of an HTML element. 
+    /*
+    var element = document.getElementById("myElement"); 
+    var text = element.textContent; // Retrieve the text content of the element
+    console.log(text); // Log the text content to the console
+    */ 
 });
 
 function getRandomNumber() {

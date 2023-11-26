@@ -22,7 +22,7 @@ const questions  = document.querySelectorAll(".question");
 questions.forEach(function (ques){
     const btn = ques.querySelector(".question-btn");
     
-    //console.log(btn) --> all three buttons
+    //console.log(btn) --> either of the three buttons 
 
     //now we do not have to look around the document
 

@@ -51,9 +51,9 @@ month = months[month]; //october
 
 const weekday = weekdays[futureDate.getDay()];
 
-giveaway.textContent = `Giveaway ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}pm`;
+giveaway.textContent = `Ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}pm`;
 
-//to sow how many days, hours, mins, secs are left
+//to show how many days, hours, mins, secs are left
 // using millisecond
 
 //find millisec of future date and current date and then subtract it
@@ -81,11 +81,11 @@ function getRemainingTime() {
   let days = t / oneDay; // 2.34567 .34567 is hours, min and sec
   days = Math.floor(days); //integer value
 
-  //let hours= t/ oneHour; //124.6795 hours but we are already calculating days
+  //let hours= t/ oneHour; //124.6795 hours but we are already calculated days
 
   // 9%2 -> 1
   // 8%3 -> 2
-  // t%oneDay -> remainder 2.6795 // 2days
+  // t%oneDay -> remainder 2.6795
 
   let hours = Math.floor((t % oneDay) / oneHour); //2
 
