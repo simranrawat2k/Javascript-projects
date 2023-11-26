@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -189,4 +190,197 @@
     .form{
         width:90%;
     }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background-color:rgb(230,229,230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width:30%;
+    padding: 20px;
+    border: 5px solid rgb(171,199,175);
+    background-color: white;
+    height: 80vh;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar{
+    width:0 !important;
+}
+
+.add-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.add-input{
+    border-radius: 5px;
+    padding:5px;
+    width:90%;
+}
+
+.add-task .fa-square-plus{
+    font-size: 33px;
+    color: rgb(104, 151, 111);
+    cursor: pointer;
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tasks{
+    font-size: 1.2rem;
+}
+
+.tasks .card{    
+    border: 3px solid rgb(171,199,175);
+    padding:10px;
+    background-color: rgb(225,235,222);
+    position: relative;
+    border-radius: 10px;
+    margin-bottom:20px;
+}
+
+/*.tasks .btns {
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}*/
+
+.tasks .btns .edit, .tasks .btns .delete{
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+
+.card > *{
+    margin-bottom: 10px;
+}
+
+.card .title{
+    font-weight: bold;
+}
+
+.card .date{
+    color:rgb(83, 83, 83);
+}
+
+
+.overlay{
+    display: none;
+    background-color: rgba(128, 128, 128, 0.606);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.overlay.show{
+    display:block;
+}
+
+.form{
+    height: 80vh;
+    width: 45%;
+    position: absolute;
+    top:-50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    background-color: white;
+    border-radius: 10px;
+    padding:20px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.form.show{
+    top:50%;
+}
+
+.form-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.task-form > *{
+    margin-bottom: 20px;
+}
+
+.task-form input, .task-form textarea{
+    width:100%;
+    padding: 5px;
+    font-size:20px;
+    margin-top: 10px;
+}
+
+.form .cross{
+    font-size:2.2rem;
+    cursor: pointer;
+}
+
+
+.form-btns{
+    text-align: end;
+}
+
+.form-btns .close, .form-btns .add{
+    font-size: 1.5rem;
+    padding:10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    margin-top: 20px;
+}
+
+.form-btns .close{
+    background-color: grey;
+}
+
+.form-btns .add{
+    background-color: rgb(8,109,255);
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width:50%;
+    }
+
+    .form{
+        width:60%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .container{
+        width:90%;
+    }
+
+    .form{
+        width:90%;
+    }
+>>>>>>> c094bbe36255384ace31adfc5cc1c42379a4fdb1
 }

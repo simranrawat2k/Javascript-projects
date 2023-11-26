@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container{
     display: flex;
     gap:5em;
@@ -12,4 +13,20 @@
 
 #posts div span{
     cursor:pointer;
+=======
+.container{
+    display: flex;
+    gap:5em;
+    font-size: 1.2rem;
+}
+
+#posts div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#posts div span{
+    cursor:pointer;
+>>>>>>> c094bbe36255384ace31adfc5cc1c42379a4fdb1
 }
